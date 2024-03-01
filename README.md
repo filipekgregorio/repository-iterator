@@ -6,19 +6,7 @@ Repository iterator is a tool designed to iterate through multiple projects in y
 
 1. **Ensure Node.js and NVM are installed**: Make sure you have Node.js installed on your system. You can use NVM (Node Version Manager) to manage your Node.js installations. Install NVM by following the instructions [here](https://github.com/nvm-sh/nvm#installing-and-updating).
 
-2. **Run the Setup Script**: Before using the package, run the setup script to install the necessary dependencies and tools. The setup script will handle everything within its own process, similar to how `nvm use` works.
-
-    ```bash
-    chmod +x ./scripts/setup.sh
-    ./scripts/setup.sh
-    ```
-
-    This script will:
-    - Install the LTS version of Node.js.
-    - Globally install `npm-check-updates`.
-    - Locate the `npm-check-updates` executable.
-
-3. **Perform Iterations**: After the setup is complete, you can perform iterations through your projects using the following commands:
+2. **Perform Iterations**: After the setup is complete, you can perform iterations through your projects using the following commands:
     - To iterate through all projects listed in the `repositories.json` configuration file, run:
 
         ```bash
