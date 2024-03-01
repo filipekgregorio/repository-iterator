@@ -19,13 +19,13 @@ Repository iterator is a tool designed to iterate through multiple projects in y
     - Locate the `npm-check-updates` executable.
 
 3. **Perform Iterations**: After the setup is complete, you can perform iterations through your projects using the following commands:
-    - To iterate through all projects listed in the `main.json` configuration file, run:
+    - To iterate through all projects listed in the `repositories.json` configuration file, run:
 
         ```bash
         ./main.sh --all
         ```
 
-    - Alternatively, you can iterate through specific projects by specifying their keys from the `main.json` file. For example, to iterate through the "sb" and "lb" projects, run:
+    - Alternatively, you can iterate through specific projects by specifying their keys from the `repositories.json` file. For example, to iterate through the "sb" and "lb" projects, run:
 
         ```bash
         ./main.sh --sb --lb
@@ -37,7 +37,7 @@ Repository iterator is a tool designed to iterate through multiple projects in y
 
 - **Task Execution**: When running the setup script, all tasks are executed within the script's process. This means changes made by the script, such as switching Node.js versions using `nvm use`, are contained within the script's environment and do not affect the terminal session where the script is executed.
 
-- **Configuration File**: Projects must be added to the `main.json` configuration file. Ensure to specify the correct keys **(CamelCase only)** for your projects in this file.
+- **Configuration File**: Projects must be added to the `repositories.json` configuration file. Ensure to specify the correct keys **(CamelCase only)** for your projects in this file.
 
 ## Project Structure
 
