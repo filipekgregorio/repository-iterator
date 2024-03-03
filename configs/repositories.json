@@ -1,10 +1,8 @@
 {
-  "absolute_root_path": "/Users/nhodi/Webtales",
+  "absolute_root_path": "/Users/nhodi/repositories",
   "repositories": {
-    "sb": "ucpa-com",
-    "lb": "ucpa-labalaguere",
-    "alpha": "ucpa-alpha",
-    "el": "ucpa-eole",
-    "alphaTda": "ucpa-alpha-funnel"
+    "rep1": "repository-1",
+    "rep2": "repository-2",
+    "rep3": "repository-3"
   }
 }
