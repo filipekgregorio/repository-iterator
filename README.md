@@ -13,10 +13,10 @@ Repository iterator is a tool designed to iterate through multiple projects in y
         ./main.sh --all
         ```
 
-    - Alternatively, you can iterate through specific projects by specifying their keys from the `repositories.json` file. For example, to iterate through the "sb" and "lb" projects, run:
+    - Alternatively, you can iterate through specific projects by specifying their keys from the `repositories.json` file. For example, to iterate through the "rep1" and "rep2" projects, run:
 
         ```bash
-        ./main.sh --sb --lb
+        ./main.sh --rep1 --rep2
         ```
 
     Ensure to run these commands within the project directory where you wish to perform iterations.
