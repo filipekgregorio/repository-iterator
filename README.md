@@ -50,4 +50,4 @@ package-vulnerabilities/
 
 This project structure organizes the files for easy management and usage.
 
-If you encounter any issues or have questions, feel free to reach out [nhodi](mailto:filipe.gregorio@webtales.fr).
+If you encounter any issues or have questions, feel free to reach out [nhodi](mailto:f.gregorio.w@gmail.com).
