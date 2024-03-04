@@ -34,7 +34,7 @@ change_repo_directory() {
     cd "$repo_path" || exit 1;
 
     # Run the specified script
-    "$selected_script"; 
+    eval "$selected_script"; 
 
     # Return to the previous directory
     popd > /dev/null;

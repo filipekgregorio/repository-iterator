@@ -10,7 +10,8 @@ selected_script="";
 display_script_options() {
     echo -e "\n";
     echo -e "${CYAN}Please select a script to run:${NC}";
-    echo -e "1. Vulnerability checker (npm-update-packages) ${GREEN}(default)${NC}";
+    echo -e "1. Vulnerability checker (npm-update-packages)";
+    echo -e "2. Custom command ${GREEN}(default)${NC}";
 }
 
 # Prompt the user to select a script to run
@@ -21,15 +22,20 @@ prompt_script_selection() {
         1)
             echo -e "${GREEN}Running vulnerability checker (npm-update-packages)${NC}";
             selected_script="vulnerability_checker";        
-        ;;       
+            # Source the script
+            source "scripts/common/$selected_script.sh";
+        ;;   
+        2)
+            echo -e "\n${CYAN}ex. 'rm -rf node_modules | rm -f package-lock.json | npm i${NC}'";
+            read -p "Enter your custom prompt:" custom_prompt;
+            selected_script="${custom_prompt}";        
+        ;;               
         *)
-            echo -e "${GREEN}Running vulnerability checker (npm-update-packages)${NC}";
-            selected_script="vulnerability_checker";
+            echo -e "\n${CYAN}ex. 'rm -rf node_modules | rm -f package-lock.json | npm i${NC}'";
+            read -p "Enter your custom prompt:" custom_prompt;
+            selected_script="${custom_prompt}";   
         ;;
     esac
-    
-    # Source the script
-    source "scripts/common/$selected_script.sh";
 }
 
 # Prompt for script selection
