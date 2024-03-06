@@ -26,12 +26,12 @@ prompt_script_selection() {
             source "scripts/common/$selected_script.sh";
         ;;   
         2)
-            echo -e "\n${CYAN}ex. 'rm -rf node_modules | rm -f package-lock.json | npm i${NC}'";
+            echo -e "\n${CYAN}ex. 'rm -rf node_modules && rm -f package-lock.json && npm i${NC}'";
             read -p "Enter your custom prompt: " custom_prompt;
             selected_script="${custom_prompt}";        
         ;;               
         *)
-            echo -e "\n${CYAN}ex. 'rm -rf node_modules | rm -f package-lock.json | npm i${NC}'";
+            echo -e "\n${CYAN}ex. 'rm -rf node_modules && rm -f package-lock.json && npm i${NC}'";
             read -p "Enter your custom prompt: " custom_prompt;
             selected_script="${custom_prompt}";   
         ;;
