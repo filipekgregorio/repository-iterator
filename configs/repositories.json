@@ -1,7 +1,7 @@
 {
-  "absolute_root_path": "/Users/nhodi/repositories",
+  "absolute_root_path": "/Users/nhodi/Webtales",
   "repositories": {
-    "rep1": "repository-1",
+    "eole": "ucpa-eole",
     "rep2": "repository-2",
     "rep3": "repository-3"
   }
