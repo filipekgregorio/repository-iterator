@@ -42,7 +42,7 @@ prompt_script_selection() {
 prompt_script_selection;
 
 # Process --all flag
-[ $# -eq 0 ] || [ "$*" == *"--all"* ] && {
+[ $# -eq 0 ] || [[ " $* " == *" --all "* ]] && {
     REPOSITORIES=$(jq -r '.repositories | keys | .[]' "$REPOSITORIES_CONFIG_FILE");
 
     for repo_name in $REPOSITORIES; do
